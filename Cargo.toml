@@ -1,0 +1,21 @@
+[package]
+name = "jlabel"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+julius = { git = "https://github.com/jpreprocess/julius-rs.git", rev = "1f248d2e5bf65a84bf73cc72ce4315cdee8a0149" }
+
+clap = { version = "4.3.21", features = ["derive"] }
+anyhow = "1.0"
+
+dasp = { version = "0.11", features = ["all"] }
+
+hound = "3.5.0"
+
+jpreprocess = "0.4.0"
+jpreprocess-jpcommon = "0.4.0"
+jpreprocess-core = "0.4.0"
